@@ -1,0 +1,12 @@
+<ng-container *ngFor="let contactType of contactTypes | keyvalue">
+  <input
+    class="contact-type-selector"
+    type="radio"
+    id="{{contactType.value}}-contacts-radio"
+    value="{{contactType.value}}"
+    [ngModel]="selectedContactType"
+    name="cards"
+    (ngModelChange)="onSelectContactType(contactType.value)">
+  <label class="contact-type-selector"
+         for="{{contactType.value}}-contacts-radio">{{contactType.value + " contacts"}}</label>
+</ng-container>

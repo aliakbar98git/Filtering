@@ -1,0 +1,136 @@
+import {Contact} from './model/contact';
+import {ContactType} from './model/contact.type';
+import { InjectionToken } from '@angular/core';
+
+export const contactsInjectionToken = new InjectionToken('Contacts');
+
+export const contacts: Contact[] = [
+  {
+    id: 1,
+    name: 'Anna',
+    surname: 'May',
+    birthDate: '1.01.1964',
+    address: 'MainStreet 16',
+    city: 'New York',
+    country: 'USA ',
+    phoneNumber: '342-787-333',
+    contactType: ContactType.PRIVATE,
+  },
+  {
+    id: 2,
+    name: 'Mike',
+    surname: 'Round',
+    birthDate: '1.10.1988',
+    address: 'SecondStreet 16',
+    city: 'London',
+    country: 'UK ',
+    phoneNumber: '999-666-233',
+    contactType: ContactType.PRIVATE
+  }, {
+    id: 3,
+    name: 'Jo',
+    surname: 'Chu',
+    birthDate: '1.01.2000',
+    address: 'RainStreet 19',
+    city: 'Luton',
+    country: 'UK ',
+    phoneNumber: '377-555-222',
+    contactType: ContactType.PRIVATE
+  }, {
+    id: 4,
+    name: 'Natalia',
+    surname: 'Mount',
+    birthDate: '19.11.1967',
+    address: 'SchoolStreet 33',
+    city: 'Amsterdam',
+    country: 'Netherlands',
+    phoneNumber: '505-787-929',
+    contactType: ContactType.PRIVATE
+  },
+  {
+    id: 5,
+    name: 'Isabel',
+    surname: 'Young',
+    birthDate: '1.12.2002',
+    address: 'BirdStreet 117',
+    city: 'New York',
+    country: 'USA ',
+    phoneNumber: '111-666-333',
+    contactType: ContactType.PRIVATE
+  },
+  {
+    id: 6,
+    name: 'Joshua',
+    surname: 'Round',
+    birthDate: '1.01.2001',
+    address: 'ColdStreet 165',
+    city: 'Hitchin',
+    country: 'UK ',
+    phoneNumber: '342-787-333',
+    contactType: ContactType.PRIVATE
+  },
+  {
+    id: 7,
+    name: 'Anny',
+    surname: 'Kay',
+    birthDate: '1.01.1964',
+    address: 'MainStreet 16',
+    city: 'New York',
+    country: 'USA ',
+    phoneNumber: '342-787-333',
+    contactType: ContactType.BUSINESS,
+  },
+  {
+    id: 8,
+    name: 'Michael',
+    surname: 'Square',
+    birthDate: '1.10.1988',
+    address: 'SecondStreet 16',
+    city: 'London',
+    country: 'UK ',
+    phoneNumber: '999-666-233',
+    contactType: ContactType.BUSINESS,
+  }, {
+    id: 9,
+    name: 'Johnny',
+    surname: 'Row',
+    birthDate: '1.01.2000',
+    address: 'RainStreet 19',
+    city: 'Luton',
+    country: 'UK ',
+    phoneNumber: '377-555-222',
+    contactType: ContactType.BUSINESS,
+  }, {
+    id: 10,
+    name: 'Natasha',
+    surname: 'Mix',
+    birthDate: '19.11.1967',
+    address: 'SchoolStreet 33',
+    city: 'Amsterdam',
+    country: 'Netherlands',
+    phoneNumber: '505-787-929',
+    contactType: ContactType.BUSINESS,
+  },
+  {
+    id: 11,
+    name: 'Isa',
+    surname: 'Land',
+    birthDate: '1.12.2002',
+    address: 'BirdStreet 117',
+    city: 'New York',
+    country: 'USA ',
+    phoneNumber: '111-666-333',
+    contactType: ContactType.BUSINESS,
+  },
+  {
+    id: 12,
+    name: 'Eliza',
+    surname: 'Lake',
+    birthDate: '1.01.2001',
+    address: 'ColdStreet 165',
+    city: 'Hitchin',
+    country: 'UK ',
+    phoneNumber: '342-787-333',
+    contactType: ContactType.BUSINESS,
+  }
+];
